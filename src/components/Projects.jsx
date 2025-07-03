@@ -13,7 +13,7 @@ const projectsData = [
     image: portfolioImg,
     description:
       "Built with React, Vite, and animated particles. Fully responsive and customizable.",
-    github: "https://github.com/yourusername/portfolio",
+    github: "https://github.com/neeraj18k/My-Portfolio.git",
   },
   {
     title: "Deepfake Detection System",
