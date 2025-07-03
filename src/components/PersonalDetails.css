@@ -1,0 +1,45 @@
+.personal-section {
+    padding: 5rem 2rem;
+    background: #101010;
+    color: white;
+    text-align: center;
+  }
+  
+  .personal-section h2 {
+    font-size: 2.5rem;
+    color: #39ff14;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #39ff14;
+  }
+  
+  .personal-info-grid {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .info-card {
+    background: #1b1b1b;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00ffff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: #ffea00;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 16px #00ffff;
+  }
+  
+  .info-card svg {
+    font-size: 1.5rem;
+    color: #ff00ff;
+  }
+  

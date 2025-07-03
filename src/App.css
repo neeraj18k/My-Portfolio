@@ -1,0 +1,56 @@
+.animated-bg {
+    background-image: url('./assets/circuit-bg.jpg'); /* ✅ Your new image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* allows parallax effect */
+    position: relative;
+    z-index: 0;
+  }
+  
+  /* Optional overlay effect for content */
+  section {
+    background-color: rgba(0, 0, 0, 0.65); /* overlay to make text readable */
+    padding: 5rem 2rem;
+    scroll-margin-top: 120px;
+  }
+  /* Default for large screens (already fine) */
+section {
+    padding: 5rem 2rem;
+  }
+  
+  /* Responsive for tablets and smaller screens */
+  @media (max-width: 768px) {
+    section {
+      padding: 4rem 1.5rem;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .project-cards,
+    .skills-grid,
+    .hobby-grid {
+      grid-template-columns: 1fr !important;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .project-card,
+    .skill-card,
+    .hobby-card {
+      width: 100% !important;
+    }
+  }
+  .section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  

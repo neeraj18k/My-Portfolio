@@ -1,0 +1,146 @@
+.home-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px #00ffff;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #39ff14;
+  margin-bottom: 1.5rem;
+}
+
+.animated-pic {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animated-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 0 0 8px #ff00ff;
+  animation: slideUp 1.2s ease-out;
+}
+
+.tagline {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ffea00;
+  text-shadow: 0 0 4px #ffea00;
+  animation: fadeIn 2s ease-in;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.section-container {
+  background-color: rgba(0, 0, 0, 0.65); /* translucent dark bg */
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 0 15px #00ffff44;
+}
+.home-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.terminal-gif {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #00ffff;
+  border: 2px solid #39ff14;
+}
+.text-block {
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px #00ffff;
+  color: #fff;
+}
+
+.text-block h1 {
+  font-size: 2.8rem;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff;
+}
+
+.text-block h1 span {
+  color: #39ff14;
+  text-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14;
+}
+
+.text-block p {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  text-shadow: 0 0 8px #ffffffcc;
+}
+
+.intro-quote {
+  font-style: italic;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+.typed-line {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ffea00;
+  text-shadow: 0 0 10px #ffea00;
+  font-style: italic;
+}
+
