@@ -12,7 +12,7 @@ function Education() {
         </div>
 
         <div className="edu-card">
-          <h3>12th – Science (PCMC)</h3>
+          <h3>12th – Science (PCME)</h3>
           <p>SIR MV PU College, Davanagere</p>
           <span className="edu-details">87.5% | 2020 – 2022</span>
         </div>
