@@ -20,7 +20,7 @@ function CertificationsWorkshops() {
           <h3>Workshops</h3>
           <ul>
             <li>💻 Mastering the art of Real World Penetration Testing by Accubits Technolgies Inc.Trivandrum  </li>
-            <li>Murder Myster Solving organised by-IEEE</li>
+            <li>Murder Mystery Solving organised by-IEEE</li>
             <li>📊 Data Visualization with Python – IEEE Chapter</li>
           </ul>
         </div>

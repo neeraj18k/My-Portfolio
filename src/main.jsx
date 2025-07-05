@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import './index.css';
+import ReactGA from 'react-ga4';
 
-AOS.init();
+// ✅ Initialize Google Analytics
+ReactGA.initialize("G-K73N2KZ01F");
+ReactGA.send("pageview");
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

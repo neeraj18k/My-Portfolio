@@ -1,39 +1,55 @@
-import './Resume.css';
-import resumeFile from '../assets/resume.pdf';
-import { useState } from 'react';
+import React from "react";
+import { motion } from "framer-motion";
 
 function Resume() {
-  const [showResume, setShowResume] = useState(false);
-
-  const handleToggle = () => {
-    setShowResume(!showResume);
-  };
-
   return (
-    <section id="resume" className="resume-section">
-      <h2>Resume</h2>
+    <section
+      id="resume"
+      className="py-20 px-4 bg-black text-white text-center relative overflow-hidden"
+    >
+      {/* Glowing circles in background */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-green-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
-      <button className="view-btn" onClick={handleToggle}>
-        {showResume ? "Hide Resume 📄" : "View Resume 📄"}
-      </button>
+      {/* Resume Content */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="relative z-10 max-w-2xl mx-auto"
+      >
+        <h2 className="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+          My Resume
+        </h2>
 
-      {showResume && (
-        <div className="resume-content">
-          <iframe
-            src={resumeFile}
-            title="Neeraj Kumar Resume"
-            width="100%"
-            height="500px"
-          ></iframe>
+        <p className="text-lg text-gray-300 mb-12">
+          Click below to view or download my latest resume.
+        </p>
 
-          <a href={resumeFile} download className="download-btn">
-            🔥 Download PDF
-          </a>
-        </div>
-      )}
+        {/* View Button */}
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
+        >
+          📄 View Resume
+        </a>
+
+        {/* Spacer */}
+        <div className="my-6" />
+
+        {/* Download Button */}
+        <a
+          href="/resume.pdf"
+          download="Neeraj_Kumar_Resume.pdf"
+          className="inline-block w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
+        >
+          ⬇️ Download Resume
+        </a>
+      </motion.div>
     </section>
   );
 }
 
 export default Resume;
-

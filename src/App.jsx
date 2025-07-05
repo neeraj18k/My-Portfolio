@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -15,7 +15,14 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import ReactGA from "react-ga4"; // ✅ Import GA
+
 function App() {
+  // ✅ Send initial pageview on component mount
+  useEffect(() => {
+    ReactGA.send("pageview");
+  }, []);
+
   return (
     <Fragment>
       {/* Fixed navbar + global particle layer */}

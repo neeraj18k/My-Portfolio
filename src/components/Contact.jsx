@@ -13,7 +13,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaEnvelope /> mpneerajkumar28@gmail.com
+          <FaEnvelope /> Email
         </a>
 
         <a
@@ -22,7 +22,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaPhone /> +91 8050885938
+          <FaPhone /> Phone Number
         </a>
 
         <a
@@ -31,7 +31,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub /> github.com/neeraj18k
+          <FaGithub /> GitHub
         </a>
 
         <a
@@ -40,7 +40,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin /> linkedin.com/in/neeraj-kumar-237118249
+          <FaLinkedin /> linkedin
         </a>
       </div>
     </section>
